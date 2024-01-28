@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 @Data
 public class PersonService {
 
-    private List<Person> personService;
+    private List<Person> personService = new ArrayList<>();
 
     public static List<String> firstNameLastName(List<Person> personService) {
         List<String> firstNameLastName = personService.stream()
